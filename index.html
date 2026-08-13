@@ -108,7 +108,7 @@
             
             <!-- Мобільна шапка (видима тільки на малих екранах) -->
             <div class="flex items-center justify-between w-full lg:w-auto lg:hidden">
-                <button onclick="openModal('Залишити заявку')" class="bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[14px] px-5 py-2 rounded-[40px] transition-colors hover:bg-opacity-80 whitespace-nowrap">Залишити заявку</button>
+                <button onclick="openModal('Обговорити захід')" class="bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[14px] px-5 py-2 rounded-[40px] transition-colors hover:bg-opacity-80 whitespace-nowrap">Обговорити захід</button>
                 <button id="burgerBtn" class="flex flex-col gap-[5px] p-2 focus:outline-none">
                     <span class="w-[24px] h-[2px] bg-[#261815] transition-all duration-300 transform origin-center rounded"></span>
                     <span class="w-[24px] h-[2px] bg-[#261815] transition-all duration-300 rounded"></span>
@@ -124,7 +124,7 @@
                 <a href="#block7" class="nav-link text-[#261815] font-roboto font-medium text-[16px] whitespace-nowrap hover:opacity-70 transition-opacity">Чому ми?</a>
                 <a href="#block9" class="nav-link text-[#261815] font-roboto font-medium text-[16px] whitespace-nowrap hover:opacity-70 transition-opacity">Процес</a>
                 <a href="#block11" class="nav-link text-[#261815] font-roboto font-medium text-[16px] whitespace-nowrap hover:opacity-70 transition-opacity">Наші кейси</a>
-                <button onclick="openModal('Залишити заявку')" class="nav-link bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[16px] px-6 py-2.5 rounded-[40px] whitespace-nowrap transition-colors hover:bg-opacity-80 w-full lg:w-auto mt-2 lg:mt-0">Залишити заявку</button>
+                <button onclick="openModal('Обговорити захід')" class="nav-link bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[16px] px-6 py-2.5 rounded-[40px] whitespace-nowrap transition-colors hover:bg-opacity-80 w-full lg:w-auto mt-2 lg:mt-0">Обговорити захід</button>
             </div>
         </nav>
     </div>
@@ -144,11 +144,11 @@
                 <p class="text-p-main font-roboto text-[#ffffff] text-center">Організуємо подію під ключ: локацію, кейтеринг, технічне забезпечення, персонал, реєстрацію гостей і координацію всіх процесів. Усе буде підготовлено вчасно, продумано до деталей і готове до непередбачених ситуацій.</p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 self-center w-full sm:w-auto justify-center">
-                    <button onclick="openModal('Отримати прорахунок заходу')" class="bg-[#ffffff] text-[#261815] font-oswald font-bold py-4 px-8 rounded-2xl transition-all shadow-lg transform hover:scale-105 w-full sm:w-auto">
-                        Отримати прорахунок заходу
+                    <button onclick="openModal('Підготувати мій захід')" class="bg-[#ffffff] text-[#261815] font-oswald font-bold py-4 px-8 rounded-2xl transition-all shadow-lg transform hover:scale-105 w-full sm:w-auto">
+                        Підготувати мій захід
                     </button>
                     <a href="tel:+380681316063" class="bg-[#F2C364] text-[#261815] font-oswald font-bold py-4 px-8 rounded-2xl transition-all shadow-lg transform hover:scale-105 w-full sm:w-auto flex items-center justify-center text-center">
-                        Зателефонувати
+                        Зателефонувати менеджеру
                     </a>
                 </div>
             </div>
@@ -402,7 +402,7 @@
                         </ul>
                     </details>
                     <button onclick="openModal('Пакет Кейтеринг')" class="w-full bg-dark text-white hover:bg-dark80 font-bold py-4 rounded-2xl transition-colors">
-                        Прорахувати кейтеринг
+                        Скласти меню з доставкою
                     </button>
                 </div>
 
@@ -428,7 +428,7 @@
                         </ul>
                     </details>
                     <button onclick="openModal('Пакет Організація заходу')" class="w-full bg-dark text-white hover:bg-dark80 font-bold py-4 rounded-2xl transition-colors">
-                        Прорахувати організацію
+                        Організувати захід
                     </button>
                 </div>
 
@@ -454,7 +454,7 @@
                         </ul>
                     </details>
                     <button onclick="openModal('Пакет Комплексна організація')" class="w-full bg-[#F2C364] text-[#261815] hover:bg-[#e0b252] font-bold py-4 rounded-2xl transition-colors">
-                        Отримати прорахунок
+                        Отримати захід під ключ
                     </button>
                 </div>
             </div>
@@ -581,8 +581,8 @@
                     </div>
                 </div>
             </div>
-            <button onclick="openModal('Залишити заявку (Кроки)')" class="bg-accent hover:bg-[#e0b252] text-dark font-oswald font-bold text-[20px] py-4 px-12 rounded-2xl transition-all shadow-lg transform hover:scale-105">
-                Залишити заявку
+            <button onclick="openModal('Обговорити захід (Кроки)')" class="bg-accent hover:bg-[#e0b252] text-dark font-oswald font-bold text-[20px] py-4 px-12 rounded-2xl transition-all shadow-lg transform hover:scale-105">
+                Почати підготовку заходу
             </button>
         </div>
     </section>
@@ -709,8 +709,8 @@
             <div class="container mx-auto px-4 relative z-10">
                 <h2 class="font-oswald text-h2-m md:text-h1 font-bold mb-6 text-[#ffffff]">Плануєте захід?<br>Давайте організуємо його разом.</h2>
                 <p class="text-p-main font-roboto mb-10 max-w-2xl mx-auto text-[#ffffff]">Розкажіть нам про майбутню подію, а ми підготуємо оптимальне рішення, прорахуємо вартість та візьмемо на себе всі організаційні процеси — від першої зустрічі до завершення заходу.</p>
-                <button onclick="openModal('Отримати прорахунок заходу')" class="bg-[#ffffff] text-[#261815] font-oswald font-bold text-[20px] py-5 px-12 rounded-2xl transition-all shadow-xl transform hover:scale-105">
-                    Отримати прорахунок заходу
+                <button onclick="openModal('Підготувати мій захід')" class="bg-[#ffffff] text-[#261815] font-oswald font-bold text-[20px] py-5 px-12 rounded-2xl transition-all shadow-xl transform hover:scale-105">
+                    Організувати мій захід
                 </button>
             </div>
         </section>
@@ -787,7 +787,7 @@
                         </div>
                         
                         <button type="submit" id="submitBtn" class="w-full bg-accent text-dark font-oswald font-bold text-[20px] h-[60px] rounded-xl transition-colors hover:bg-[#e0b252] flex justify-center items-center">
-                            Відправити
+                            Обговорити мій захід
                         </button>
                     </form>
                 </div>
