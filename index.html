@@ -108,7 +108,12 @@
             
             <!-- Мобільна шапка (видима тільки на малих екранах) -->
             <div class="flex items-center justify-between w-full lg:w-auto lg:hidden">
-                <button onclick="openModal('Обговорити захід')" class="bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[14px] px-5 py-2 rounded-[40px] transition-colors hover:bg-opacity-80 whitespace-nowrap">Обговорити захід</button>
+                <div class="flex items-center gap-[20px]">
+                    <button onclick="openModal('Обговорити захід')" class="bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[14px] px-5 py-2 rounded-[40px] transition-colors hover:bg-opacity-80 whitespace-nowrap">Обговорити захід</button>
+                    <a href="https://t.me/aaarturr" target="_blank" class="flex items-center justify-center bg-[#261815] text-[#FFFFFF] w-[36px] h-[36px] rounded-[60px] transition-colors hover:bg-opacity-80 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    </a>
+                </div>
                 <button id="burgerBtn" class="flex flex-col gap-[5px] p-2 focus:outline-none">
                     <span class="w-[24px] h-[2px] bg-[#261815] transition-all duration-300 transform origin-center rounded"></span>
                     <span class="w-[24px] h-[2px] bg-[#261815] transition-all duration-300 rounded"></span>
@@ -124,7 +129,13 @@
                 <a href="#block7" class="nav-link text-[#261815] font-roboto font-medium text-[16px] whitespace-nowrap hover:opacity-70 transition-opacity">Чому ми?</a>
                 <a href="#block9" class="nav-link text-[#261815] font-roboto font-medium text-[16px] whitespace-nowrap hover:opacity-70 transition-opacity">Процес</a>
                 <a href="#block11" class="nav-link text-[#261815] font-roboto font-medium text-[16px] whitespace-nowrap hover:opacity-70 transition-opacity">Наші кейси</a>
-                <button onclick="openModal('Обговорити захід')" class="nav-link bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[16px] px-6 py-2.5 rounded-[40px] whitespace-nowrap transition-colors hover:bg-opacity-80 w-full lg:w-auto mt-2 lg:mt-0">Обговорити захід</button>
+                
+                <div class="flex items-center gap-[20px] w-full lg:w-auto mt-2 lg:mt-0">
+                    <button onclick="openModal('Обговорити захід')" class="nav-link bg-[#261815] text-[#FFFFFF] font-oswald font-bold text-[16px] px-6 py-2.5 rounded-[40px] whitespace-nowrap transition-colors hover:bg-opacity-80 w-full lg:w-auto">Обговорити захід</button>
+                    <a href="https://t.me/aaarturr" target="_blank" class="flex items-center justify-center bg-[#261815] text-[#FFFFFF] w-[44px] h-[44px] rounded-[60px] transition-colors hover:bg-opacity-80 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    </a>
+                </div>
             </div>
         </nav>
     </div>
@@ -274,6 +285,23 @@
                         Отримати захід під ключ
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: Нам довіряють -->
+    <section class="pt-[60px] pb-[60px] bg-[#ffffff]">
+        <div class="container mx-auto px-4">
+            <h2 class="font-oswald text-h2-m md:text-h2 font-bold mb-12 text-center text-[#261815]">Нам довіряють</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-8 gap-[10px] items-center justify-items-center">
+                <img src="vnic.jpg" alt="vnic" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="Astra.jpg" alt="Astra" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="ava.jpg" alt="ava" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="basf.jpg" alt="basf" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="btu.jpg" alt="btu" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="corteva.jpg" alt="corteva" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="Kernel.jpg" alt="Kernel" class="w-full max-w-[150px] h-auto object-contain">
+                <img src="valena agro.jpg" alt="valena agro" class="w-full max-w-[150px] h-auto object-contain">
             </div>
         </div>
     </section>
@@ -436,13 +464,8 @@
                 <p class="text-p-main text-[#261815]">Навіть невелика подія потребує чіткої координації. Локація, кейтеринг, технічне забезпечення, меблі, персонал, таймінг і комфорт гостей — достатньо однієї помилки, щоб вона вплинула на загальне враження від заходу.</p>
             </div>
 
-            <!-- Image Block (Lazy Load) -->
-            <div class="w-full p-[16px] mb-8">
-                <div class="w-full h-[400px] lg:h-[600px] bg-cover bg-center bg-no-repeat rounded-[40px] shadow-xl overflow-hidden lazy-bg" data-bg="B2.jpg"></div>
-            </div>
-
             <!-- Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-6 gap-[10px]">
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-[10px] mb-8">
                 <div class="md:col-span-2 bg-[#ffffff] p-6 rounded-2xl shadow-sm border-2 border-[#261815] flex flex-col items-center justify-center text-center">
                     <h3 class="font-oswald text-h3-m font-bold text-[#261815] mb-3">Десятки підрядників</h3>
                     <p class="text-p-sub text-[#261815]">Окремо меблі, окремо звук, окремо кейтеринг, окремо персонал і координатори.</p>
@@ -463,6 +486,11 @@
                     <h3 class="font-oswald text-h3-m font-bold text-[#261815] mb-3">Неконтрольований бюджет</h3>
                     <p class="text-p-sub text-[#261815]">Додаткові витрати, приховані доплат і неузгоджених позицій.</p>
                 </div>
+            </div>
+
+            <!-- Image Block (Lazy Load) -->
+            <div class="w-full p-[16px]">
+                <div class="w-full h-[400px] lg:h-[600px] bg-cover bg-center bg-no-repeat rounded-[40px] shadow-xl overflow-hidden lazy-bg" data-bg="B2.jpg"></div>
             </div>
         </div>
     </section>
@@ -567,7 +595,7 @@
                     <div class="text-accent font-oswald text-[40px] font-bold leading-none opacity-100 flex-shrink-0">4</div>
                     <div class="flex-grow">
                         <h3 class="font-oswald text-h3-m font-bold mb-2 text-[#ffffff]">Узгоджуємо всі деталі</h3>
-                        <p class="text-p-sub text-[#ffffff]">Разом коригуємо наповнення, технічні рішення, меню, оформлення та бюджет події.</p>
+                        <p class="text-p-sub text-[#ffffff]">Разом коригуємо наповнення, технічні рішення, меню, оформлення та budget події.</p>
                     </div>
                 </div>
                 <!-- 5 -->
@@ -727,14 +755,27 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-center md:text-left">
                 <p class="font-oswald text-h3-m text-accent mb-2">Наші контакти</p>
-                <a href="tel:+380681316063" class="block text-[20px] font-bold hover:text-accent transition">+38 068 131 60 63 (Юлія)</a>
-                <a href="mailto:mogorich_yuliia@ukr.net" class="block text-gray-400 hover:text-white transition">mogorich_yuliia@ukr.net</a>
+                <div class="flex flex-col gap-3 md:items-start items-center">
+                    <a href="tel:+380681316063" class="flex items-center gap-2 text-[20px] font-bold text-[#FFFFFF] hover:text-accent transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 1.01-.63 1.01-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                        +38 068 131 60 63 (Юлія)
+                    </a>
+                    <a href="mailto:mogorich_yuliia@ukr.net" class="flex items-center gap-2 text-[#FFFFFF] hover:text-accent transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        mogorich_yuliia@ukr.net
+                    </a>
+                    <a href="https://t.me/aaarturr" target="_blank" class="flex items-center gap-2 text-[#FFFFFF] hover:text-accent transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        Написати в Telegram
+                    </a>
+                </div>
             </div>
             
             <div class="text-center">
                 <p class="text-gray-400 mb-4">Соціальні мережі</p>
                 <!-- Соціальна кнопка -->
-                <a href="https://instagram.com/mogorich_ivent" target="_blank" class="inline-block bg-white/10 hover:bg-accent hover:text-dark px-8 py-4 rounded-xl transition-colors font-bold uppercase tracking-wider">
+                <a href="https://instagram.com/mogorich_ivent" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-accent hover:text-dark px-8 py-4 rounded-xl transition-colors font-bold uppercase tracking-wider">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2C4.58 2 2 4.58 2 7.75v8.5c0 3.17 2.58 5.75 5.75 5.75h8.5c3.17 0 5.75-2.58 5.75-5.75v-8.5C22 4.58 19.42 2 16.25 2h-8.5zm0 1.5h8.5c2.35 0 4.25 1.9 4.25 4.25v8.5c0 2.35-1.9 4.25-4.25 4.25h-8.5c-2.35 0-4.25-1.9-4.25-4.25v-8.5C3.5 5.4 5.4 3.5 7.75 3.5zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 1.5c1.93 0 3.5 1.57 3.5 3.5S13.93 15.5 12 15.5 8.5 13.93 8.5 12 10.07 8.5 12 8.5zm5.25-2.75c-.41 0-.75.34-.75.75s.34.75.75.75.75-.34.75-.75-.34-.75-.75-.75z"/></svg>
                     Instagram (mogorich_ivent)
                 </a>
             </div>
@@ -742,6 +783,9 @@
             <div class="text-center md:text-right max-w-xs">
                 <p class="text-gray-400 mb-2">Адреса</p>
                 <p class="font-roboto text-p-sub">Чернігівська область, Ніжинський район, с. Вертіївка, вул. Київська, будинок 1</p>
+                <a href="https://maps.app.goo.gl/TbUUJGmRFdgUiz8V8" target="_blank" rel="noopener noreferrer" class="inline-block mt-4">
+                    <img src="map.jpg" alt="Карта" style="width: 250px; height: 200px; border-radius: 40px; object-fit: cover;">
+                </a>
             </div>
         </div>
         
