@@ -103,7 +103,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Навігаційне меню (Sticky + Бургер) -->
-    <div class="sticky top-[10px] z-10 px-4 w-full">
+    <div class="sticky top-[10px] z-[99] px-4 w-full">
         <nav class="bg-[#ffffff] shadow-xl rounded-[40px] mx-auto max-w-7xl px-6 py-3 flex flex-wrap items-center justify-between border border-gray-100 transition-all duration-300">
             
             <!-- Мобільна шапка (видима тільки на малих екранах) -->
@@ -819,7 +819,7 @@
 
 
     <!-- ================= MODAL WIDGET ================= -->
-   <div id="leadModal" class="fixed inset-0 z-[11] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+   <div id="leadModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
         <!-- Backdrop -->
         <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closeModal()"></div>
         
@@ -877,7 +877,7 @@
     </div>
 
     <!-- ================= MODAL WIDGET (ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ) ================= -->
-    <div id="privacyModal" class="fixed inset-0 z-[11] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+    <div id="privacyModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
         <!-- Backdrop -->
         <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closePrivacyModal()"></div>
         
@@ -1088,23 +1088,37 @@
             });
         });
 
-        // Логіка ротації картинок у Hero блоці
+       // Логіка ротації картинок у Hero блоці
         document.addEventListener('DOMContentLoaded', function() {
             const img1 = document.getElementById('hero-p1');
             const img2 = document.getElementById('hero-p2');
+            const img3 = document.getElementById('hero-p3');
             let imgState = 1;
 
-            if (img1 && img2) {
+            if (img1 && img2 && img3) {
+                // Примусово задаємо початковий стан (State 1) при завантаженні
+                img1.style.visibility = 'visible';
+                img2.style.visibility = 'hidden';
+                img3.style.visibility = 'hidden';
+
                 setInterval(() => {
                     if (imgState === 1) {
+                        // Перехід до State 2
                         img1.style.visibility = 'hidden';
+                        img2.style.visibility = 'visible';
+                        img3.style.visibility = 'hidden';
                         imgState = 2;
                     } else if (imgState === 2) {
+                        // Перехід до State 3
+                        img1.style.visibility = 'hidden';
                         img2.style.visibility = 'hidden';
+                        img3.style.visibility = 'visible';
                         imgState = 3;
                     } else {
+                        // Повернення до State 1
                         img1.style.visibility = 'visible';
-                        img2.style.visibility = 'visible';
+                        img2.style.visibility = 'hidden';
+                        img3.style.visibility = 'hidden';
                         imgState = 1;
                     }
                 }, 5000);
